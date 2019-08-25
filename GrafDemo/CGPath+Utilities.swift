@@ -19,6 +19,8 @@ extension CGPathDumpUtility {
                 print("curveTo - \(points)")
             case .closeSubpath:
                 print("close - \(points)")
+            @unknown default:
+              print("unknown - \(points)")
             }
         }
     }
